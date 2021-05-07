@@ -1,0 +1,6 @@
+- créer un premier point de couleur de radius R e [Rmin ; Rmax]
+- marquer l'espace autour du centre du point dans un rayon R + Rmax.
+- pour créer un nouveau point, on parcourt la feuille itérativement en ajoutant
+  un nombre aléatoire aux variables de parcours à chaque boucle, afin d'éviter d  e créer un alignement de points
+  jusqu'a trouver un emplacement non-marqué, et on répète le processus.
+- le parcours est terminé lorsque les 2 variables de parcours ont atteint une taille > size sans trouver d'emplacement
