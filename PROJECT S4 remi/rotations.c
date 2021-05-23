@@ -68,7 +68,7 @@ void leftrotation(SDL_Surface *image1,int *p)
     Uint8 r,g,b;
     int w = image1->w;
     int h = image1->h;
-    printf("bonjour\n");
+    
     for (int x = 0; x < h; x++)
     {
         for (int y = 0; y < w; y++)

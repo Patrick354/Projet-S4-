@@ -2,12 +2,12 @@
 CC=gcc
 
 CPPFLAGS= `pkg-config --cflags gtk+-3.0` `pkg-config --cflags sdl` -MMD
-CFLAGS= -Wall -Wextra -std=c99 -O3 -g  
+CFLAGS=      -std=c99 -O3   
 LDFLAGS= $(PTHREAD) $(GTKLIB) -rdynamic
 LDLIBS= `pkg-config --libs gtk+-3.0` `pkg-config --libs sdl` -lSDL_image -lm
 
 
-SRC= main.c rotations.c pixel_operations.c outilsdl.c  #skrewcorrection.h
+SRC= main.c rotations.c pixel_operations.c outilsdl.c verify.c  #skrewcorrection.h
 OBJ=${SRC:.c=.o}
 DEP=${SRC:.c=.d}
 
